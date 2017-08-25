@@ -8,13 +8,11 @@ water = int(input('How much is your monthly water bill: '))
 cable = int(input('How much is your TV, internet, and home phone bill: '))
 phone = int(input('how much is your Cell Phone bill: '))
 # monthly bill print out
-weekly = int(weekly * 4)
-food = int(food * 4)
 
 print('Monthly Average Bills')
 
-print('Take home pay: ', weekly)
-print('How much you pay for groceries: ', food)
+print('Take home pay: ', weekly * 4)
+print('How much you pay for groceries: ', food * 4)
 print('How much you pay for power: ', power)
 print('How much you pay for water: ', water)
 print('How much you pay for TV and Internet: ', cable)
@@ -22,5 +20,13 @@ print('How much you pay for your cell phone: ', phone)
 
 print('Left over money for the month: ', weekly - (food + power + water + cable + phone))
 
-weekly = int(weekly * 12)
-food = int(food * 12)
+print('Total for the year: ')
+
+print('Take home pay: ', weekly * 52)
+print('How much you pay for groceries: ', food * 52)
+print('How much you pay for power: ', power)
+print('How much you pay for water: ', water)
+print('How much you pay for TV and Internet: ', cable)
+print('How much you pay for your cell phone: ', phone)
+
+print('Left over money for the year: ', (weekly * 52) - ((food * 52) + power + water + cable + phone))
