@@ -18,15 +18,15 @@ print('How much you pay for water: ', water)
 print('How much you pay for TV and Internet: ', cable)
 print('How much you pay for your cell phone: ', phone)
 
-print('Left over money for the month: ', weekly - (food + power + water + cable + phone))
+print('Left over money for the month: ', (weekly * 4) - ((food * 4) + power + water + cable + phone))
 
 print('Total for the year: ')
 
 print('Take home pay: ', weekly * 52)
 print('How much you pay for groceries: ', food * 52)
-print('How much you pay for power: ', power)
-print('How much you pay for water: ', water)
-print('How much you pay for TV and Internet: ', cable)
-print('How much you pay for your cell phone: ', phone)
+print('How much you pay for power: ', power * 12)
+print('How much you pay for water: ', water * 12)
+print('How much you pay for TV and Internet: ', cable * 12)
+print('How much you pay for your cell phone: ', phone * 12)
 
-print('Left over money for the year: ', (weekly * 52) - ((food * 52) + power + water + cable + phone))
+print('Left over money for the year: ', ((weekly * 52) - ((food * 52) + (power * 12) + (water * 12) + (cable * 12) + (phone * 12)))
