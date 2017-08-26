@@ -1,6 +1,11 @@
 # printing warning
 print('This is an estimator for your monthly bills!')
 
+# SOME COOL
+# CODE BLOCK
+# GOES HERE
+
+
 # amount you bring home and how much you spend
 weekly = int(input('How much money you make a week after taxes: '))
 food = int(input('How much do you spend on groceries a week: '))
